@@ -16,4 +16,14 @@ class IndexController extends Controller
 
         return view('dashboard.index');
     }
+
+    public function toko() 
+    {
+        return  view('dashboard.toko.index');
+    }
+
+    public function tokokedua() 
+    {
+        return  view('dashboard.tokokedua.index');
+    }
 }

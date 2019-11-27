@@ -13,4 +13,16 @@
             </a>
         </li>
     @endif
+
+    <li class="{{ \App\Utils::checkRoute(['dashboard::toko']) ? 'active' : '' }}">
+        <a href="{{ route('dashboard::toko') }}">
+            <i class="fa fa-building"></i> <span>Toko</span>
+        </a>
+    </li>
+    <li class="{{ \App\Utils::checkRoute(['dashboard::tokokedua']) ? 'active' : '' }}">
+            <a href="{{ route('dashboard::tokokedua') }}">
+                <i class="fa fa-building"></i> <span>Toko Ke dua</span>
+            </a>
+        </li>
+   
 </ul>

@@ -65,6 +65,11 @@ Route::group(['middleware' => 'auth'], function () {
          */
         Route::get('/', ['as' => 'index', 'uses' => 'IndexController@index']);
 
+        /** Route toko */
+        Route::get('/toko', ['as' => 'toko', 'uses' => 'IndexController@toko']);
+
+        /** Route toko */
+        Route::get('/tokokedua', ['as' => 'tokokedua', 'uses' => 'IndexController@tokokedua']);
         /**
          * Profile
          * // Route named "dashboard::profile"
